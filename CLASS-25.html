@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlUcBvl-1y-PytM6dwTRFeaOcXlqfv8GTOQw&usqp=CAU">
+ 
+    <style>
+        body{
+            background-color: cornsilk;
+        }
+        #btn1, #btn2, #btn3{
+            height: 100px;
+            width: 160px;
+            font-size: 40px;
+            font-family: calibri;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+ 
+        #btn1:hover, #btn2:hover, #btn3:hover{
+            box-shadow: 0px 0px 15px black inset;
+            border: 2px solid gold;
+        }
+ 
+        #btn1{
+            background-color: darkblue;
+            color: orange;
+        }
+        #btn2{
+            background-color: green;
+            color: yellow;
+        }
+        #btn3{
+            background-color: purple;
+            color: white;
+        }
+ 
+        #inp{
+            height: 80px;
+            width: 650px;
+            background-color: blue;
+            color: yellow;
+            font-size: 27px;
+            font-family: cursive;
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+    </style>
+    
+</head>
+<body>
+    <input type="text" id="inp">
+    <table>
+        <tr>
+            <td> <input type="button" value="7" id="btn1" onclick="takeInput(7)">   </td>
+            <td> <input type="button" value="8" id="btn1" onclick="takeInput(8)">   </td>
+            <td> <input type="button" value="9" id="btn1" onclick="takeInput(9)">   </td>
+            <td> <input type="button" value="+" id="btn2" onclick="takeInput('+')">   </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="4" id="btn1" onclick="takeInput(4)">   </td>
+            <td> <input type="button" value="5" id="btn1" onclick="takeInput(5)">   </td>
+            <td> <input type="button" value="6" id="btn1" onclick="takeInput(6)">   </td>
+            <td> <input type="button" value="-" id="btn2" onclick="takeInput('-')">   </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="1" id="btn1" onclick="takeInput(1)">   </td>
+            <td> <input type="button" value="2" id="btn1" onclick="takeInput(2)">   </td>
+            <td> <input type="button" value="3" id="btn1" onclick="takeInput(3)">   </td>
+            <td> <input type="button" value="x" id="btn2" onclick="takeInput('*')">   </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="=" id="btn3" onclick="finalAnswer()">   </td>
+            <td> <input type="button" value="0" id="btn1" onclick="takeInput(0)">   </td>
+            <td> <input type="button" value="C" id="btn3" onclick="removeExpression()">   </td>
+            <td> <input type="button" value="÷" id="btn2" onclick="takeInput('/')">   </td>
+        </tr>
+    </table>
+    <script>
+        function finalAnswer(){
+            var exp = document.getElementById("inp").value
+            var answer = eval(exp)
+            document.getElementById("inp").value = answer
+        }
+        function removeExpression(){
+            document.getElementById("inp").value = null
+        }
+        function takeInput(num){
+           document.getElementById("inp").value = document.getElementById("inp").value + num
+        //    document.getElementById("inp").value += num
+        /*
+            a = a+1
+            a+=1
+ 
+            a = a-4
+            a-=4
+ 
+            a = a*3
+            a*=3
+ 
+            a = a/5
+            a/=5
+        */
+        }
+    </script>
+</body>
+</html>
