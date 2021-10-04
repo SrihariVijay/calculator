@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>File#2</title>
+    <link rel="icon" href="https://cdn.shopify.com/s/files/1/0547/5424/6843/products/ChinaFirstOfficeBoxFile556_1-1.jpg-1.jpg?v=1620065944">
+    <link rel="stylesheet" href="class-15.css">
+</head>
+<body>
+    <fieldset class="outer">
+        <legend id="outer">FOOTBALL COACHING</legend>
+ 
+        <form>
+            <!-- Student Details -->
+            <fieldset class="student">
+                <legend>Student Details</legend>
+                
+                <span class="quest1">Name of the Student : </span>
+                <input type="text" id="inp1" placeholder="STUDENT'S NAME"> <br>
+
+                <span class="quest1">Grade of the Student : </span>
+                <select id="inp2">
+                    <option>--Grade--</option>
+                    <option>1st std</option>
+                    <option>2nd std</option>
+                    <option>3rd std</option>
+                    <option>4th std</option>
+                    <option>5th std</option>
+                    <option>6th std</option>
+                    <option>7th std</option>
+                    <option>8th std</option>
+                    <option>9th std</option>
+                    <option>10th std</option>
+                </select> <br>
+ 
+                <span class="quest1">Enter Date of Birth : </span>
+                <input type="date" id="inp1"> <br>
+ 
+                <span class="quest1">Gender : </span> <br>
+                <input type="radio" name="gender" id="rad"> <span class="quest2">MALE</span> <br>
+                <input type="radio" name="gender" id="rad"> <span class="quest2">FEMALE</span> <br>
+                <input type="radio" name="gender" id="rad"> <span class="quest2">Prefer not to say</span> <br>
+ 
+                <span class="quest1">Enter your School name : </span>
+                <input type="text" id="inp1" placeholder="SCHOOL NAME"> <br>
+ 
+            </fieldset>
+ 
+            <!-- Parent Details -->
+            <fieldset class="parent">
+                <legend>Parent Details</legend>
+                <!-- 
+                    1. Name
+                    2. Relation with the student
+                    3. Mobile
+                    4. Email
+                    5. Address
+                 -->
+                 <span class="quest1">Name of the Parent : </span>
+                <input type="text" id="inp1" placeholder="PARENTS NAME"> <br>
+ 
+                <span class="quest1">Relation with the Student : </span>
+                <select id="inp2">
+                    <option>--Relation--</option>
+                    <option>FATHER</option>
+                    <option>MOTHER</option>
+                    <option>ELDER SIBLING</option>
+                    <option>GRAND PARENTS</option>
+                    <option>UNCLE</option>
+                    <option>AUNT</option>
+                </select> <br>
+ 
+                <span class="quest1">Enter Mobile Number : </span>
+                <input type="number" id="inp1" placeholder="MOBILE NUMBER"> <br>
+ 
+                <span class="quest1">Enter Email-Id : </span>
+                <input type="email" id="inp1" placeholder="EMAIL-ID"> <br>
+ 
+                <span class="quest1">Address : </span> <br>
+                <textarea></textarea> 
+            </fieldset>
+ 
+            <!-- Medical Details -->
+            <fieldset class="medical">
+                <legend>Medical Details</legend>
+                <!-- 
+                    1. Haemoglobin
+                    2. Blood Group
+                    3. Disabilities
+                    4. Previous record of any disease
+                 -->
+                 <span class="quest1">Haemoglobin : </span>
+                 <input type="number" id="inp1" min="0" max="16"> <br>
+ 
+                 <span class="quest1">Blood Group : </span>
+                 <select id="inp2">
+                    <option>--Blood Group--</option>
+                     <option>A+ve</option>
+                     <option>A-ve</option>
+                     <option>B+ve</option>
+                     <option>B-ve</option>
+                     <option>O+ve</option>
+                     <option>O-ve</option>
+                     <option>AB+ve</option>
+                     <option>AB-ve</option>
+                     <option>A1+ve</option>
+                     <option>A1-ve</option>
+                 </select> <br>
+ 
+                 <span class="quest1">Any Disabilities:</span>
+                 <input type="radio" name="disability" id="rad"> <span class="quest2">YES</span>
+                 <input type="radio" name="disability" id="rad"> <span class="quest2">NO</span>
+                 <input type="radio" name="disability" id="rad"> <span class="quest2">Prefer not to say</span><br>
+ 
+                 <span class="quest1">Previous record of any chronic/acute disease:</span>
+                 <input type="radio" name="disability" id="rad"> <span class="quest2">YES</span>
+                 <input type="radio" name="disability" id="rad"> <span class="quest2">NO</span>
+                 <input type="radio" name="disability" id="rad"> <span class="quest2">Prefer not to say</span> <br>
+ 
+            </fieldset>
+ 
+            <!-- Declaration -->
+            <fieldset class="declare">
+                <legend>Declaration</legend>
+                <p>
+                    “I,SRIHARI.V, hereby declare that all the information submitted by me in the application form is correct, true and valid. I will present the supporting documents as and when required.
+                </p>
+                <input type="text" id="inp1" placeholder="SIGNATURE OF PARENTS">
+                <input type="text" id="inp1" placeholder="SIGNATURE OF STUDENT">
+                <input type="text" id="inp1" placeholder="SIGNATURE OF COACH">
+            </fieldset>
+ 
+            <input type="submit" value="SUBMIT" id="btn">
+            <input type="reset" value="CLEAR" id="btn">
+        </form>
+ 
+    </fieldset>
+</body>
+</html>
